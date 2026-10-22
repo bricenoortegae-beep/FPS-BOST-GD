@@ -1,0 +1,25 @@
+{
+  "geode": "4.0.0",
+  "gd": { "win": "*", "android": "*", "mac": "*" },
+  "id": "tuusuario.stable-fps",
+  "name": "Stable FPS",
+  "version": "v1.0.0",
+  "developer": "tuusuario",
+  "description": "FPS ajustable y estable. Sin hooks pesados.",
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Activar",
+      "default": true
+    },
+    "fps": {
+      "type": "int",
+      "name": "FPS objetivo",
+      "description": "Límite de FPS. Valores muy altos pueden afectar la estabilidad.",
+      "default": 240,
+      "min": 30,
+      "max": 1000,
+      "control": { "slider": true, "input": true }
+    }
+  }
+}
